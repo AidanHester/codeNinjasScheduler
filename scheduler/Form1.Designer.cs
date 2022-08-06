@@ -45,7 +45,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(612, 55);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Code Ninjas Scheduler V3";
+            this.label1.Text = "Code Ninjas Scheduler V4";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // checkedListBox
