@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="scheduler.exe" version="1.0.0.3" publicKeyToken="385479e4cb73e497" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="scheduler" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="scheduler.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="scheduler.exe" size="633816">
+      <assemblyIdentity name="scheduler" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>dGlpb2+PwawpfWU0RcxoCNDipQByCivldD4z2n58yPk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="scheduler.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+CM46OnHRrXZXNLMx7+U3V3iubiYL//d8hGOR13lDhU=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-DISQ3JF\Spud" issuerKeyHash="05346ca501364f5e58f3c65d007f30360605b771" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>YT2cZEtZhOvilzPgoy3wFoz5r/HPc42e5OGtmJ2aMvQ=</DigestValue></Reference></SignedInfo><SignatureValue>fRBHkWx464SUKr0JoDd/mYtdhjrp+cOZyZBAqANbmtd3shAfmoU+f25YwKBrYYUbK33IDCA86oolPEnJNUzxvk4gIt9ULon4JKf5GL5MkGsw+h08QrBI4ZtM0NjIueJX9YWDkDTj9hTEq8u1sFNmUA+TKBmPtQwdlYrQL2Nca/s=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>uE99TKRG44h1tH6A6PTnR1KWrQHxeHRYue4z6dzai+3Pp0vu+Bh53QdjUzaA28vCzsZtYz55V0EUKtDU9Ocs1oa+IYLhE2uFjrwqmK1afUCB1/KnhBK6ZlR9+D7LbEGHcHgwwu6oy2+JDzINpeQrI5O7TH2gP9OSBupxpcKLjGU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="f4329a9d98ade1e49e8d73cff1aff98c16f02da3e03397e2eb84594b649c3d61" Description="" Url=""><as:assemblyIdentity name="scheduler.exe" version="1.0.0.3" publicKeyToken="385479e4cb73e497" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-DISQ3JF\Spud</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>Eq5ogtJT3IPNmHo08D+3BN/smTzipd5JQ7qk6fP9IbQ=</DigestValue></Reference></SignedInfo><SignatureValue>YyO9nYgj7kDCZeYWtvOlCaoxHneF6XYgxopWCPAf8loysyywUi4ssllsNFwcBqc2bXOe/xJyBtuYLveyRGTjRav5+Dlo4EEDcUqOtNCtfo8P0xUh4IsRca4X9xIQPDfQszv4LeOp/Bvh++/lBcX+J9ccv6SzeszlPDz052JCTf8=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>uE99TKRG44h1tH6A6PTnR1KWrQHxeHRYue4z6dzai+3Pp0vu+Bh53QdjUzaA28vCzsZtYz55V0EUKtDU9Ocs1oa+IYLhE2uFjrwqmK1afUCB1/KnhBK6ZlR9+D7LbEGHcHgwwu6oy2+JDzINpeQrI5O7TH2gP9OSBupxpcKLjGU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQGjT3NcCuBotC75EQwhzLlDANBgkqhkiG9w0BAQsFADAzMTEwLwYDVQQDHigARABFAFMASwBUAE8AUAAtAEQASQBTAFEAMwBKAEYAXABTAHAAdQBkMB4XDTIyMDgwNjE3MDM0MVoXDTIzMDgwNjIzMDM0MVowMzExMC8GA1UEAx4oAEQARQBTAEsAVABPAFAALQBEAEkAUwBRADMASgBGAFwAUwBwAHUAZDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAuE99TKRG44h1tH6A6PTnR1KWrQHxeHRYue4z6dzai+3Pp0vu+Bh53QdjUzaA28vCzsZtYz55V0EUKtDU9Ocs1oa+IYLhE2uFjrwqmK1afUCB1/KnhBK6ZlR9+D7LbEGHcHgwwu6oy2+JDzINpeQrI5O7TH2gP9OSBupxpcKLjGUCAwEAATANBgkqhkiG9w0BAQsFAAOBgQAuDpvL2WAVolveRfw0U5r/T7113QyFMdh95yALnrXQGUy+SsEMS+ASUJf7cZPkcQ2z2tamhlpVIwx9dYxPs5d290e1tAtYS91BveW8A5c0QWHOOGRsokNo8rfLfyRcXyFZ0lQAbVm6eKxQ33scFh+fsvx5vBvkrzTLqaHRAFwucg==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
